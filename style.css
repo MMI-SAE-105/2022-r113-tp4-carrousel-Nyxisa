@@ -79,3 +79,7 @@ img {
     /* espace entre les enfants */
     gap: 1rem;
   }
+
+  figcaption{
+    text-align: center;
+  }
