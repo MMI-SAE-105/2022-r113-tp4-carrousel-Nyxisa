@@ -1,13 +1,11 @@
 * {
     /* change le box model */
-    box-sizing: border-box;
-    margin: auto;
+
 }
 
 img {
     /* image responsive, largeur maxi */
-    display: flex;
-    max-width: 100%;
+    width: auto;
     /* hauteur "auto" */
     height: auto;
 }
@@ -28,8 +26,7 @@ img {
 .carrousel_ecran {
     /* largeur du parent pour chaque enfant */
     width: 100%;
-    /* permet de garder toute la largeur du parent */
-    flex: none;
+    /* permet de garder toute la largeur du parent */ 
     scroll-snap-align: start; /* aligne les enfants par blocs */
 }
 

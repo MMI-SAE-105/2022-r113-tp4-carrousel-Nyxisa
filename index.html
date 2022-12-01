@@ -10,7 +10,8 @@
 </head> 
     <body>
         <div class="carrousel" x-data="{}">
-            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précédent"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précédent" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
+            <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button>
             <div class="carrousel_parent-ecrans" x-ref="parent">
                 <div id="ecran-1" class="carrousel_ecran">
                     <figure>
@@ -43,7 +44,7 @@
                     </figure>
                 </div>
             </div>
-            <ul class="caroussel_liste-liens" @click="$refs.parent.scrollLeft -= $refs.parent.clientwidth">
+            <ul class="caroussel_liste-liens">
                 <li><a href="#ecran-1" class="caroussel_lien">Écran 1</a></li>
                 <li><a href="#ecran-2" class="caroussel_lien">Écran 2</a></li>
                 <li><a href="#ecran-3" class="caroussel_lien">Écran 3</a></li>
