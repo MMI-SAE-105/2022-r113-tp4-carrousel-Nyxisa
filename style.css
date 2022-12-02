@@ -101,6 +101,6 @@ figcaption {
 
 }
 
-.caroussel_lien :active {
+.actif {
   color: rgb(231, 111, 13);
 }
