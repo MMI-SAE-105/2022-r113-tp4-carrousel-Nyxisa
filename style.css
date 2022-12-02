@@ -62,7 +62,7 @@ img {
   }
 
 
-.caroussel_liste-liens {
+.caroussel_liste {
     /* aligne horizontalement les enfants */
     display:flex;
     /* centre horizontalement les enfants */
@@ -79,4 +79,8 @@ img {
 
   figcaption{
     text-align: center;
+  }
+
+  .caroussel_lien :actif {
+    color: rgb(69, 208, 69);
   }
