@@ -8,6 +8,9 @@ img {
   max-width: 100%;
   /* hauteur "auto" */
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
 
 }
 
@@ -103,4 +106,5 @@ figcaption {
 
 .actif {
   color: rgb(231, 111, 13);
+  font-size: larger;
 }
