@@ -1,11 +1,11 @@
 * {
     /* change le box model */
-
+box-sizing: border-box;
 }
 
 img {
     /* image responsive, largeur maxi */
-    width: auto;
+    max-width: 100%;
     /* hauteur "auto" */
     height: auto;
 }
@@ -15,11 +15,11 @@ img {
     display: flex;
     /* largeur du parent */
     width: 100%;
-
     gap: 1rem;
     scroll-behavior: smooth; /* animation de défilement */
     scroll-snap-type: x mandatory; /* permet de scroller par blocs */
     overflow-x: scroll; /* permet de scroller horizontalement */
+
 
 }
 
@@ -27,22 +27,25 @@ img {
     /* largeur du parent pour chaque enfant */
     width: 100%;
     /* permet de garder toute la largeur du parent */ 
+    flex: none;
     scroll-snap-align: start; /* aligne les enfants par blocs */
 }
 
 .carrousel_ecran figure {
     /* enlève les marges par défaut */
     margin: 0;
+
 }
 
 .carrousel {
     position: relative;
+
   }
   
   .carrousel_btn {
     position: absolute;
     top: 50%; /* centre verticalement */
-    transform: translateY(-50%); /* methode du point nort */
+    transform: translateY(-50%); /* methode du point mort */
     width: 2rem;
     height: 2rem;
     background: rgba(0,0,0,0.5);
@@ -62,7 +65,7 @@ img {
   }
 
 
-.caroussel_liste {
+.caroussel_liste-liens {
     /* aligne horizontalement les enfants */
     display:flex;
     /* centre horizontalement les enfants */
@@ -75,12 +78,14 @@ img {
     list-style: none;
     /* espace entre les enfants */
     gap: 1rem;
+    text-decoration: none;
+    
   }
 
   figcaption{
     text-align: center;
   }
 
-  .caroussel_lien :actif {
+  .caroussel_lien:active {
     color: rgb(69, 208, 69);
   }
