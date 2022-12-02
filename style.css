@@ -3,6 +3,23 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #222;
+  color: #ddd;
+}
+div {
+  overflow: auto;
+}
+/* Global */
+div::-webkit-scrollbar {
+  width: 8px;
+}
+/* Ascenseur */
+div::-webkit-scrollbar-thumb {
+  background: rgb(165, 116, 235);
+  border-radius: 15px;
+}
+
 img {
   /* image responsive, largeur maxi */
   max-width: 100%;
@@ -100,11 +117,11 @@ figcaption {
 
 .caroussel_lien {
   text-decoration: none;
-  color: black;
+  color: rgb(226, 226, 226);
 
 }
 
 .actif {
-  color: rgb(231, 111, 13);
+  color: rgb(165, 116, 235)
   font-size: larger;
 }
