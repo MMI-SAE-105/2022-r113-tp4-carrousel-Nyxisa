@@ -12,11 +12,13 @@ div {
 }
 /* Global */
 div::-webkit-scrollbar {
-  width: 8px;
+  width: 2px;
+  height: 5px;
+
 }
 /* Ascenseur */
 div::-webkit-scrollbar-thumb {
-  background: rgb(165, 116, 235);
+  background: rgba(165, 116, 235,0.5);
   border-radius: 15px;
 }
 
@@ -108,11 +110,14 @@ img {
   /* espace entre les enfants */
   gap: 1rem;
 
+  padding: 10px;
+
 
 }
 
 figcaption {
   text-align: center;
+  padding: 5px;
 }
 
 .caroussel_lien {
@@ -122,6 +127,6 @@ figcaption {
 }
 
 .actif {
-  color: rgb(165, 116, 235)
+  color: rgb(165, 116, 235);
   font-size: larger;
 }
